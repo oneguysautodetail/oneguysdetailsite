@@ -22,6 +22,10 @@ const Footer = () => (
         <a href="tel:206-422-9317">
           <h4>Cell : 206-422-9317</h4>
         </a>
+        <h3>Email</h3>
+        <a href="mailto:oneguysautodetail@gmail.com">
+          <h4>oneguysautodetail@gmail.com</h4>
+        </a>
       </div>
     </div>
 )

@@ -9,7 +9,7 @@ import { PRICING_DATA } from "./price-slide-gallery-data.js"
 const PriceGallery = () => (
   
     <div className="pricing-gallery-container">
-      {PRICING_DATA.map((service, index) => {
+      {PRICING_DATA.sort((a, b) => a.price.car > b.price.car ? 1 : -1).map((service, index) => {
         return (
           <div className="slide-container">
             <PriceSlide
