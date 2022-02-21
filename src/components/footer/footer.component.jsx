@@ -1,4 +1,5 @@
 import React from "react"
+import ScrollReveal from "../scroll-reveal/scroll-reveal.component"
 
 import "./footer.styles.scss"
 
@@ -6,6 +7,7 @@ const Footer = () => (
   
   <div className="footer-container" id="footer">
     <div className="gradient-fade-down"></div>
+      <ScrollReveal distance={0} index={1} threshold={1}>
       <div className="content-box">
         <h1 className="footer-title">Contact</h1>
         <h3>Address:</h3>
@@ -22,11 +24,8 @@ const Footer = () => (
         <a href="tel:206-422-9317">
           <h4>Cell : 206-422-9317</h4>
         </a>
-        <h3>Email</h3>
-        <a href="mailto:oneguysautodetail@gmail.com">
-          <h4>oneguysautodetail@gmail.com</h4>
-        </a>
       </div>
+    </ScrollReveal>
     </div>
 )
 
