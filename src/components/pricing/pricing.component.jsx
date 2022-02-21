@@ -6,7 +6,6 @@ import './pricing.styles.scss';
 
 const Pricing = () => (
     <div className="pricing-container" id="pricing">
-        <h1 className="section-title">Services & Pricing</h1>
         <PriceGallery />
     </div>
 )

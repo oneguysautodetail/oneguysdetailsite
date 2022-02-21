@@ -1,0 +1,29 @@
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius: .15rem;
+    margin: .5rem;
+}
+
+.banner-text {
+    margin: 1.5rem;
+    color: #ffffff;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    0%{opacity:0;}
+    
+    100%{opacity:1;}
+}

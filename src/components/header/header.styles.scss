@@ -1,18 +1,34 @@
 header {
-  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  background: linear-gradient(180deg, rgba(0,0,0,0.9850533963585434) 83%, rgba(252,252,252,0) 100%);
   margin: 0 auto;
-  display: flex;
-  justify-content: flex-end;
-  & .links-container {
-    display: flex;
-    justify-content: flex-end;
-  }
+  opacity: 0;
+  animation-name: fadetoblack;
+  animation-duration: 1s;
+  animation-delay: 500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.banner-container {
+  position: relative;
+  width: 100%;
 }
 .links-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
+  padding: 1rem 0;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-delay: 500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   h4 {
     z-index: 9999;
     margin: 1.5rem .25rem;
@@ -30,5 +46,24 @@ header {
         color: #000000;
       }
     }
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadetoblack {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
