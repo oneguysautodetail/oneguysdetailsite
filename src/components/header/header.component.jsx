@@ -9,9 +9,8 @@ const Header = () => {
 
   return (
     <header>
-      <div className="banner-container">
-        <Banner/>
-      </div>
+      <div className="spacer"></div>
+      <Banner/>
       <div className="links-container" >
         <h4>
           <AnchorLink href='#footer'>
